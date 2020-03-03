@@ -64,3 +64,14 @@ Desired capabilities
   "app": "/Users/damar/APK/ApiDemos-debug.apk"
 }
 ```
+
+## More NPM Scripts
+- Please check on package.json
+
+## Reporter
+- Mochawesome
+
+
+
+- Cucumber html report
+
