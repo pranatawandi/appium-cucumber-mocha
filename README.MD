@@ -71,10 +71,15 @@ Desired capabilities
 ## Reporter
 - Mochawesome
 
+```
+npm run mochawesome-reports
+```
+
+![mochawesome-reports](https://github.com/damarmustiko/appium-cucumber-mocha/blob/master/helpers/readme/mochawesome.png)
 
 - Cucumber html report
 
 ```
 npm run cucumber-reports
 ```
-
+![cucumber-reports](https://github.com/damarmustiko/appium-cucumber-mocha/blob/master/helpers/readme/cucumber.png)
