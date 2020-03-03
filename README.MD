@@ -16,7 +16,9 @@ npm run test-apps -- --grep @tag3
 ```
 
 ## Env
+```
 cp env.sample .env
+```
 
 ```
 PLATFORM_NAME=android
@@ -64,6 +66,21 @@ Desired capabilities
   "app": "/Users/damar/APK/ApiDemos-debug.apk"
 }
 ```
+
+## Structure
+    .
+    ...
+    features/test           # Test directory (alternatively `features` or `test`)
+    ├── reports             # Report files
+    ├── step_definitions    # Step definition files
+    ├── support             # Support files
+    │   ├── activity        # Activity list
+    │   ├── data            # Data test
+    │   ├── objects         # Page object files
+    │   └── hook            # Hook files (before - after test)
+    ├── sample.feature      # Test files using feature format (cucumber)
+    └── sample.js           # Test files using js format (mocha)
+    ...
 
 ## More NPM Scripts
 - Please check on package.json
