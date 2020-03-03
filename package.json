@@ -1,0 +1,31 @@
+{
+  "name": "coba2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-apps": "npm run clean-reports & ./node_modules/mocha/bin/mocha ./test --recursive --reporter mochawesome --reporter-options reportDir=test/reports/mochawesome/ --timeout 180000 --exit",
+    "mochawesome-reports": "open 'test/reports/mochawesome/mochawesome.html'",
+    "cucumberjs": "npx cucumber-js features/**/*.feature -f node_modules/cucumber-pretty -f json:features/reports/cucumber_report.json",
+    "test": "npx cucumber-js features/**/*.feature -f json:features/reports/cucumber_report.json",
+    "appium": "appium",
+    "appium-doctor": "appium-doctor",
+    "clean": "rm -rf ./node_modules yarn.lock package-lock.json",
+    "clean-reports": "rm -rf test/reports/mochawesome/screenshots/*.png test/reports/mochawesome/*.html test/reports/mochawesome/*.json test/reports/mochawesome/assets",
+    "cucumber-reports": "node cucumber_reports.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "appium": "1.15.1",
+    "appium-doctor": "^1.9.0",
+    "wd": "^1.11.1",
+    "mocha": "^7.0.0",
+    "mochawesome": "^4.1.0",
+    "assert": "^2.0.0",
+    "cucumber": "^4.2.1",
+    "cucumber-pretty": "^1.5.2",
+    "cucumber-html-reporter": "^0.4.0",
+    "dotenv": "^8.2.0"
+  }
+}
