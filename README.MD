@@ -1,16 +1,19 @@
 # Automation Testing on Android apps
 
 ## Appium x Cucumberjs
+```
 npm run cucumberjs -- --tags @tag3
-npm run cucumberjs -- --tags 'not @tag1'
+npm run cucumberjs -- --tags 'not @skip'
 npm run cucumberjs -- --tags '@tag1 or @tag3'
 npm run cucumberjs -- --tags 'not @tag1 and (@tag2 or @tag3)'
-
+```
 https://github.com/cucumber/cucumber/tree/master/tag-expressions
 
 ## Appium x Mocha
+```
 npm run test-apps -- --grep @skip --invert
 npm run test-apps -- --grep @tag3
+```
 
 ## Env
 cp env.sample .env
@@ -34,6 +37,9 @@ PORT=4723
 
 ## Checking device already connected on laptop
 - adb devices
+
+## Checking enviroment ($JAVA_HOME, $ANDROID_HOME) on laptop
+- npm run appium-doctor
 
 ## Inspect element tools
 - Uiautomatorviewer
