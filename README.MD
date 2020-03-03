@@ -72,6 +72,9 @@ Desired capabilities
 - Mochawesome
 
 
-
 - Cucumber html report
+
+```
+npm run cucumber-reports
+```
 
